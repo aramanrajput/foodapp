@@ -1,0 +1,121 @@
+#navbar{
+    display: flex;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: ghostwhite;
+    justify-content: space-between;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+#navbar img{
+    height: 62px;
+}
+#options{
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+#container{
+    font-family: montserrat,sans-serif;
+}
+#container{
+    margin-top: 8px;
+    
+    height: 800px;
+    background-repeat: no-repeat;
+    background-image: url("https://www.maggi.co.uk/sites/default/files/styles/maggi_desktop_image_style/public/NUK1265%20maggi%20Recipes%20banner%201500x700px%20opt2A.jpg?h=4f5b30f1&itok=DcsF1RwA")
+} 
+
+#container input{
+    position: absolute;
+    top: 300px;
+    right: 500px;
+    height: 40px;
+    width: 300px;
+   opacity: 0.7;
+   border-radius: 10px;
+}
+
+
+#container button{
+    position: absolute;
+    top: 300px;
+    height: 40px;
+    width: 100px;
+    /* left: 300px; */
+    right: 400px;
+    opacity: 0.7;
+    border-radius: 10px;
+    
+
+}
+
+
+#container1{
+    font-family: montserrat,sans-serif;
+}
+#options input{
+    width: 200px;
+    margin-top: 13px;
+    margin-left: 418px;
+    height: 30px;
+}
+#options h3{
+    padding-left: 30px;
+    padding-right: 10px;
+}
+#options button{
+    margin-top: 13px;
+    width: 60px;
+    height: 30px;
+    margin-right: 30px;
+}
+h3 a{
+    text-decoration: none;
+}
+p{
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+#container1 img{
+    border-radius: 30px;
+    position: relative;
+ 
+    left: 490px;
+    
+}
+#container1 h3{
+   text-align: center;
+    
+}
+#container1{
+    padding: 10px;
+     
+ }
+
+#container img{
+    position: absolute;
+    right: 205px;
+    top: 177px;
+    height: 518px;
+    border-radius: 30px;
+    width: 624px;
+}
+.box{
+    border: 1px solid black;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    padding: 10px;
+}
+#container3 img{
+    position: absolute;
+    right: 205px;
+    top: 177px;
+    height: 518px;
+    border-radius: 30px;
+    width: 624px;
+}
+#container3{
+    font-family: montserrat,sans-serif;
+}

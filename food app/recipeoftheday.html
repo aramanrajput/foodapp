@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,500;1,200;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style/style.css">
+<body>
+    <div id="navbar">
+
+    </div>
+<div id="container3"></div>
+</body>
+</html>
+<script type="module">
+    let navbar_div = document.getElementById("navbar")
+    let container = document.getElementById("container3")
+    import navbar from "./components/navbar.js"
+
+    import {getData,append}  from "./components/scripts/showData.js"
+
+
+
+     console.log(navbar)
+    navbar_div.innerHTML = navbar()
+
+    let response = getData(`http://www.themealdb.com/api/json/v1/1/random.php`)
+    
+
+    response.then((res)=>{
+        console.log(res)
+        append(res,container)
+
+    })
+    
+</script>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,500;1,200;1,400;1,500&display=swap" rel="stylesheet">
+</head>
+
+<link rel="stylesheet" href="style/style.css">
+<body>
+    <div id="navbar">
+
+    </div>
+
+<div id="container">
+    <input id="search" type="search" >
+    <button id="btn" >search</button>
+</div>
+</body>
+</html>
+<script type="module">
+
+
+ 
+   
+let container = document.getElementById("container")
+    let navbar_div = document.getElementById("navbar")
+    import navbar from "./components/navbar.js"
+
+    import {getData,append,showerror}  from "./components/scripts/showData.js"
+
+    // console.log(navbar)
+    navbar_div.innerHTML = navbar()
+
+        document.getElementById ("btn").addEventListener ("click", myFunction);
+let input = document.getElementById("search")
+function myFunction() {
+  var input_value =  input.value
+  console.log(input_value)
+
+  let response = getData(`http://www.themealdb.com/api/json/v1/1/search.php?s=${input_value}`)
+
+    response.then((res)=>{
+        console.log(res)
+        if(res.meals==null){
+            console.log("hello")
+            showerror(container)
+        }
+        else{
+            container.style.background="none"
+           append(res,container) 
+        }
+        
+    })
+   
+
+}
+
+
+
+
+
+
+    
+
+</script>
